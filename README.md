@@ -1,4 +1,5 @@
-# AI Agents on Arc with USDC - Multi-Agent Banking System
+
+<h1 align='center'> AI Agents on Arc with USDC - Multi-Agent Banking System</h1>
 
 This project was built as part of AI Agents on Arc with USDC hackathon hosted by [lablab.ai](https://lablab.ai/event/ai-agents-arc-usdc), where I reimagined retail banking through intelligent multi-agent systems powered by Google's Agent Development Kit (ADK), the Agent-to-Agent (A2A) Protocol, and the Gemini API.
 
