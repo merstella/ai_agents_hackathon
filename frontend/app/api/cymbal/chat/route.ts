@@ -60,8 +60,9 @@ export async function POST(request: NextRequest): Promise<Response> {
 
         console.log("[ADK CHAT] 📡 Creating session with state:", sessionState);
 
+        const apiUrl = process.env.NEXT_PUBLIC_CHAT_API_URL || 'http://localhost:8090';
         const sessionResponse = await fetch(
-          `http://localhost:8090/apps/chat/users/${userId}/sessions`,
+          `${apiUrl}/apps/chat/users/${userId}/sessions`,
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -114,7 +115,8 @@ export async function POST(request: NextRequest): Promise<Response> {
       streaming: agentRequest.streaming,
     });
 
-    const agentResponse = await fetch(`http://localhost:8090/run`, {
+    const apiUrl = process.env.NEXT_PUBLIC_CHAT_API_URL || 'http://localhost:8090';
+    const agentResponse = await fetch(`${apiUrl}/run`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(agentRequest),

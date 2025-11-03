@@ -167,6 +167,21 @@ This project was created as part of Google's AI Agent Bake Off 2025, a competiti
 - Run `uv sync` in the agents directory to install dependencies
 - Run `npm install` in the frontend directory
 
+## 🌐 Deployment
+
+This application requires both frontend and backend deployment. **Netlify alone cannot host this application** because the backend Python agents need to run on a server.
+
+See **[DEPLOYMENT.md](./DEPLOYMENT.md)** for detailed deployment instructions including:
+- How to deploy to Netlify + Cloud Provider
+- Environment variable configuration
+- Alternative deployment options (Vercel, Railway, Google Cloud)
+- Troubleshooting deployment issues
+
+**Quick Summary:**
+1. Deploy Python agents to a cloud provider (Google Cloud Run, Railway, Render, etc.)
+2. Deploy Next.js frontend to Netlify
+3. Configure environment variables in Netlify with backend URLs
+
 ---
 
 Built with ❤️ for Google's AI Agent Bake Off 2025

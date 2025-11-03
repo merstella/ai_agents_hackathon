@@ -39,7 +39,8 @@ export async function POST(request: NextRequest): Promise<Response> {
     }
 
     // 1. Create ADK session for the advisors_snapshot_agent agent
-    const sessionUrl = `http://localhost:8085/apps/advisors_snapshot_agent/users/${userId}/sessions`;
+    const apiUrl = process.env.NEXT_PUBLIC_ADVISORS_API_URL || 'http://localhost:8085';
+    const sessionUrl = `${apiUrl}/apps/advisors_snapshot_agent/users/${userId}/sessions`;
     const sessionRequestBody = { state: {} };
 
     console.log("[ADK API] 📡 Creating ADK session...");
@@ -93,13 +94,13 @@ export async function POST(request: NextRequest): Promise<Response> {
     };
 
     console.log("[ADK API] 🤖 Sending request to advisors agent...");
-    console.log("[ADK API] 🤖 Agent request URL: http://localhost:8085/run");
+    console.log("[ADK API] 🤖 Agent request URL:", `${apiUrl}/run`);
     console.log(
       "[ADK API] 🤖 Agent request body:",
       JSON.stringify(agentRequest, null, 2)
     );
 
-    const agentResponse = await fetch(`http://localhost:8085/run`, {
+    const agentResponse = await fetch(`${apiUrl}/run`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(agentRequest),

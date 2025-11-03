@@ -40,7 +40,8 @@ export async function POST(request: NextRequest): Promise<Response> {
     }
 
     // 1. Create ADK session for the perks_snapshot_agent agent
-    const sessionUrl = `http://localhost:8082/apps/perks_snapshot_agent/users/${userId}/sessions`;
+    const apiUrl = process.env.NEXT_PUBLIC_PERKS_API_URL || 'http://localhost:8082';
+    const sessionUrl = `${apiUrl}/apps/perks_snapshot_agent/users/${userId}/sessions`;
     const sessionRequestBody = { state: {} };
 
     console.log("[ADK API] 📡 Creating ADK session...");
@@ -94,13 +95,13 @@ export async function POST(request: NextRequest): Promise<Response> {
     };
 
     console.log("[ADK API] 🤖 Sending request to perks agent...");
-    console.log("[ADK API] 🤖 Agent request URL: http://localhost:8082/run");
+    console.log("[ADK API] 🤖 Agent request URL:", `${apiUrl}/run`);
     console.log(
       "[ADK API] 🤖 Agent request body:",
       JSON.stringify(agentRequest, null, 2)
     );
 
-    const agentResponse = await fetch(`http://localhost:8082/run`, {
+    const agentResponse = await fetch(`${apiUrl}/run`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(agentRequest),
