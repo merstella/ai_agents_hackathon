@@ -78,7 +78,7 @@ export function AdvisorsCard({
   title,
   items,
   variant = "default",
-}: AdvisorsCardProps): JSX.Element {
+}: AdvisorsCardProps) {
   const getIcon = () => {
     switch (variant) {
       case "advisors":

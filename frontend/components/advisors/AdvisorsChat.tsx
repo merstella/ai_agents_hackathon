@@ -20,7 +20,7 @@ export function AdvisorsChat({
   userId,
   isEnabled,
   advisorsData,
-}: AdvisorsChatProps): JSX.Element {
+}: AdvisorsChatProps) {
   const [chatState, setChatState] = useState<ChatState>({
     messages: [],
     isLoading: false,

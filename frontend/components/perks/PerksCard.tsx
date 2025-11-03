@@ -62,7 +62,7 @@ export function PerksCard({
   title,
   items,
   variant = "default",
-}: PerksCardProps): JSX.Element {
+}: PerksCardProps) {
   const getIcon = () => {
     switch (variant) {
       case "activities":

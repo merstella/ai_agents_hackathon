@@ -17,7 +17,7 @@ export function AdvisorsSnapshot({
   userId,
   onDataLoaded,
   onLoadingStateChange,
-}: AdvisorsSnapshotProps): JSX.Element {
+}: AdvisorsSnapshotProps) {
   const [data, setData] = useState<AdvisorsSnapshotData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
