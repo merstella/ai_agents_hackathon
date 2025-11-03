@@ -188,5 +188,5 @@ See **[DEPLOYMENT.md](./DEPLOYMENT.md)** for:
 
 ---
 
-Built with ❤️ for Google's AI Agent Bake Off 2025
+<p align='center'>Built with ❤️ for AI Agents on Arc with USDC Hackathon</p>
 
