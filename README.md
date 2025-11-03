@@ -1,6 +1,6 @@
-# Google AI Agent Bake Off 2025 - Multi-Agent Banking System
+# AI Agents on Arc with USDC - Multi-Agent Banking System
 
-This project was built as part of Google's AI Agent Bake Off 2025 challenge, where I reimagined retail banking through intelligent multi-agent systems powered by Google's Agent Development Kit (ADK), the Agent-to-Agent (A2A) Protocol, and the Gemini API.
+This project was built as part of AI Agents on Arc with USDC hackathon hosted by [lablab.ai](https://lablab.ai/event/ai-agents-arc-usdc), where I reimagined retail banking through intelligent multi-agent systems powered by Google's Agent Development Kit (ADK), the Agent-to-Agent (A2A) Protocol, and the Gemini API.
 
 ## 🎯 What This Project Does
 
@@ -118,7 +118,7 @@ The frontend will be available at `http://localhost:3000`
 ## 📁 Project Structure
 
 ```
-adk-bake-off/
+AI-Agents-on-Arc/
 ├── agents/                          # Multi-agent backend
 │   ├── chat/                        # Chat orchestrator agent
 │   ├── spending_snapshot_agent/     # Spending analysis agent
@@ -134,15 +134,6 @@ adk-bake-off/
 └── refs/                           # Reference materials and samples
 ```
 
-## 🎥 Built for Google's AI Agent Bake Off
-
-This project was created as part of Google's AI Agent Bake Off 2025, a competition challenging developers to build the future of retail banking using cutting-edge AI agent technology. The challenge focused on:
-
-- Creating seamless human-like interactions
-- Offering proactive financial guidance
-- Automating complex workflows with intelligence
-- Demonstrating multi-agent orchestration
-- Leveraging A2A protocol for agent communication
 
 ## 📝 Notes
 
