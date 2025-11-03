@@ -3,6 +3,7 @@ export interface ChatMessage {
   type: "user" | "agent";
   content: string;
   timestamp: Date;
+  streaming?: boolean; // Optional flag for streaming messages
 }
 
 export interface ChatState {
