@@ -5,3 +5,5 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+# No environment variables needed - using mock data for demo

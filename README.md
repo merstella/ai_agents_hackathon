@@ -169,18 +169,30 @@ This project was created as part of Google's AI Agent Bake Off 2025, a competiti
 
 ## 🌐 Deployment
 
-This application requires both frontend and backend deployment. **Netlify alone cannot host this application** because the backend Python agents need to run on a server.
+**Good News!** This application now runs in **demo mode** with mock data, so you can deploy just the frontend to Netlify without any backend setup!
 
-See **[DEPLOYMENT.md](./DEPLOYMENT.md)** for detailed deployment instructions including:
-- How to deploy to Netlify + Cloud Provider
-- Environment variable configuration
-- Alternative deployment options (Vercel, Railway, Google Cloud)
-- Troubleshooting deployment issues
+### Quick Deploy to Netlify:
 
-**Quick Summary:**
-1. Deploy Python agents to a cloud provider (Google Cloud Run, Railway, Render, etc.)
-2. Deploy Next.js frontend to Netlify
-3. Configure environment variables in Netlify with backend URLs
+1. Push code to GitHub ✅ (already done!)
+2. Go to [netlify.com](https://netlify.com) and click "Add new site"
+3. Connect your GitHub repository
+4. Netlify auto-detects settings from `netlify.toml` - just click "Deploy"!
+5. Your banking app will be live in 2-3 minutes! 🎉
+
+### What Works in Demo Mode:
+- ✅ Full UI/UX experience
+- ✅ Spending analysis with realistic data
+- ✅ Rewards and perks management
+- ✅ Investment portfolio visualization
+- ✅ AI chat with intelligent responses
+- ✅ Financial advisor recommendations
+
+The app uses realistic mock data for demonstration, so it works perfectly without any backend services!
+
+See **[DEPLOYMENT.md](./DEPLOYMENT.md)** for:
+- Detailed deployment instructions
+- How to customize mock data
+- Optional: Connecting real AI backends later
 
 ---
 
