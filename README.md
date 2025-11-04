@@ -186,6 +186,46 @@ See **[DEPLOYMENT.md](./DEPLOYMENT.md)** for:
 - How to customize mock data
 - Optional: Connecting real AI backends later
 
+
+<div align="center">
+
+  <h1><u>Our Team</u></h1>
+
+  <table>
+    <tr>
+      <td>
+        <a href="https://github.com/SaifRasool92">
+          <img src="https://avatars.githubusercontent.com/u/170190067?v=4" width="100" alt="Saif Ur Rasool"/><br>
+          <sub><b>Saif Ur Rasool</b></sub>
+        </a>
+      </td>
+      <td>
+        <a href="https://github.com/M2010">
+          <img src="https://avatars.githubusercontent.com/u/194600882?s=400" width="100" alt="Zia Ur Rehman"/><br>
+          <sub><b>Zia</b></sub>
+        </a>
+      </td>
+      <td>
+        <a href="https://github.com/ari11">
+          <img src="https://avatars.githubusercontent.com/u0772?v=4" width="100"/><br>
+          <sub><b>Hilda</b></sub>
+        </a>
+      </td>
+      <td>
+        <a href="https://github.com/A08">
+          <img src="https://avatars.githubusercontent.com/u/?v=4" width="100" /><br>
+          <sub><b>maryam</b></sub>
+        </a>
+      </td>
+      <td>
+        <a href="https://github.com/Afool">
+          <img src="https://avatars.githubusercontent.com9643705?v=4" width="100" /><br>
+          <sub><b>aine</b></sub>
+        </a>
+      </td>
+    </tr>
+  </table>
+
 ---
 
 <p align='center'>Built with ❤️ for AI Agents on Arc with USDC Hackathon</p>
