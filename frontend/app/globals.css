@@ -63,40 +63,25 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Base colors - dark mode */
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    
-    /* Bright Blue primary - same in both modes for consistency */
+    --background: #020617;
+    --foreground: #e2e8f0;
+    --card: #0f172a;
+    --card-foreground: #e2e8f0;
+    --popover: #0f172a;
+    --popover-foreground: #e2e8f0;
     --primary: #3b82f6;
-    --primary-foreground: #ffffff;
-    
-    /* Secondary and muted colors - dark mode */
-    --secondary: #171717;
-    --secondary-foreground: #ededed;
-    --muted: #262626;
-    --muted-foreground: #a3a3a3;
-    
-    /* Accent colors - dark mode */
-    --accent: #262626;
-    --accent-foreground: #ededed;
-    
-    /* Border and input colors - dark mode */
-    --border: #404040;
-    --input: #404040;
+    --primary-foreground: #f8fafc;
+    --secondary: #1e293b;
+    --secondary-foreground: #e2e8f0;
+    --muted: #334155;
+    --muted-foreground: #94a3b8;
+    --accent: #334155;
+    --accent-foreground: #f8fafc;
+    --destructive: #dc2626;
+    --destructive-foreground: #f8fafc;
+    --border: #1e293b;
+    --input: #1e293b;
     --ring: #3b82f6;
-    
-    /* Destructive colors - adjusted for dark mode */
-    --destructive: #ef4444;
-    --destructive-foreground: #ffffff;
-    
-    /* Card colors - dark mode */
-    --card: #0a0a0a;
-    --card-foreground: #ededed;
-    
-    /* Popover colors - dark mode */
-    --popover: #0a0a0a;
-    --popover-foreground: #ededed;
   }
 }
 
